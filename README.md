@@ -1,6 +1,6 @@
 # FUSION Baselines · MetaDrive 离线驾驶
 
-用同一份 **672 条离线轨迹**从头训练 FUSION、Safe BC 或 CPQ，再把**自己训练出的策略**放入 MetaDrive 实际驾驶。代码与[训练数据](https://github.com/lxKong1/fusion-baselines/releases/tag/offline672-v1)在同一个仓库；不需要旧检查点、其他项目仓库或 W&B 账号。
+用同一份 **672 条离线轨迹**从头训练 FUSION、Safe BC 或 CPQ，再把**自己训练出的策略**放入 MetaDrive 实际驾驶。代码与[训练数据](https://github.com/lxKong1/fusion-baselines/releases/tag/offline672-v1)在同一个仓库。
 
 ## 1. 获取代码和环境
 
