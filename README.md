@@ -2,7 +2,7 @@
 
 用同一份 **672 条离线轨迹**从头训练 FUSION、Safe BC 或 CPQ，再把**自己训练出的策略**放入 MetaDrive 实际驾驶。代码与[训练数据](https://github.com/lxKong1/fusion-baselines/releases/tag/offline672-v1)在同一个仓库。
 
-## 1. 获取代码和环境
+## 1. 获取代码和配置环境
 
 以下命令在 Linux 上执行。需要 Git、Conda 和约 6 GiB 的数据空间（环境另计）。短训练和无窗口驾驶都支持 CPU。
 
