@@ -60,7 +60,7 @@ python -m baseline672.cpq_policy --data dataset/offline672-v1 --output output/cp
 python -m baseline672.drive --algo cpq --checkpoint output/cpq-smoke.pt --scene O --traffic-density 0.2 --seed 940000
 ```
 
-默认无窗口；本机有图形桌面时在驾驶命令后加 **`--render`** 看 MetaDrive 原生视图。可用 `--episodes 3` 连续驾驶三回合，`--traffic-density 0.3` 调流量，`--scene` 可选 S/O/R/T/X。车辆执行加载的策略动作（转向、油门/制动），没有外部接管；每回合打印步数、终止原因、累计奖励、代价和权重摘要。只加载可信的 PyTorch 权重。
+默认无窗口；本机有图形桌面时在驾驶命令后加 **`--render`** 看 MetaDrive 视图。可用 `--episodes 3` 连续驾驶三回合，`--traffic-density 0.3` 调车流量，`--scene` 可选 S/O/R/T/X。车辆执行加载的策略动作（转向、油门/制动），没有外部接管；每回合打印步数、终止原因、累计奖励、代价和权重摘要。只加载可信的 PyTorch 权重。
 
 较长训练可从以下预算起步，在上面的命令里替换 `--steps`、`--batch-size` 并更换 `--output` 路径：FUSION 为 4,000 次更新 / batch 128，Safe BC 为 50,000 / 128，CPQ 为 100,000 / 512。驾驶时 `--checkpoint` 指向新文件。它们是示例，不是统一或调优过的比较预算；正式比较请固定场景、密度及独立评估种子。
 
