@@ -1,0 +1,9 @@
+diff --git a/setup.py b/setup.py
+index 196f669..1a0cb8e 100644
+--- a/setup.py
++++ b/setup.py
+@@ -31,3 +31,3 @@ install_requires = [
+-    "gym==0.26.2",
++    "gym==0.21.0",
+     "numpy",
+     "matplotlib",

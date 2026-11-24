@@ -1,0 +1,41 @@
+name: fusion-baselines-v1
+
+channels:
+  - defaults
+
+variables:
+  # Prefer the reproducible environment over local user packages.
+  PYTHONNOUSERSITE: "1"
+
+dependencies:
+  - python=3.8.20
+  - pip=23.3.1
+  - setuptools=64.0.3
+  - wheel=0.38.4
+  - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cu111
+      - torch==1.10.1+cu111
+      - gym==0.21.0
+      - numpy==1.23.5
+      - Pillow==9.5.0
+      - cloudpickle==2.2.1
+      - PyYAML==6.0.1
+      - tqdm==4.66.1
+      - typing-extensions==4.13.2
+      - pandas==1.5.3
+      - matplotlib==3.7.5
+      - pygame==2.5.2
+      - yapf==0.40.2
+      - seaborn==0.12.2
+      - panda3d==1.10.8
+      - panda3d-gltf==0.13
+      - panda3d-simplepbr==0.10
+      - protobuf==3.20.1
+      - opencv-python-headless==4.8.1.78
+      - lxml==4.9.4
+      - scipy==1.10.1
+      - pytest==7.4.4
+
+# The authors' MetaDrive fork has inconsistent Gym metadata. After creating
+# this environment, activate it and run scripts/install_metadrive.sh. The
+# script pins the fork commit and applies patches/metadrive-gym021.patch.
